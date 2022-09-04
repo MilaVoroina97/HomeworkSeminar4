@@ -21,18 +21,22 @@
 
 // Second Way:
 
-
-double Stepen(int x,int y)
+int Stepen (int x,int y)
 {
-    double power = Math.Pow(x,y);
-    Console.WriteLine($"{x}**{y} = {power}");
+    int power = 1;
+    for(int i = 0; i < y; i++)
+    {
+        power = power * x;
+    }
     return power;
 }
-Console.WriteLine("Enter first integer number");
+ Console.WriteLine("Enter first integer number");
 int a = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Enter second integer number");
 int b = Convert.ToInt32(Console.ReadLine());
-double res = Stepen(a,b);
+int res = Stepen(a,b);
+Console.WriteLine(res);
+
 
 
 
