@@ -25,7 +25,7 @@ try
     Console.WriteLine("Введите любое целое число: ");
     int a = Convert.ToInt32(Console.ReadLine());
     int sum = NumberSum(a);
-    Console.WriteLine(sum);
+    Console.WriteLine($"Результат суммы цифр в числе {a} равен : {sum}");
 }
 catch
 {
