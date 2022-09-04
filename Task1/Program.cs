@@ -30,12 +30,22 @@ int Stepen (int x,int y)
     }
     return power;
 }
- Console.WriteLine("Enter first integer number");
-int a = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine("Enter second integer number");
-int b = Convert.ToInt32(Console.ReadLine());
-int res = Stepen(a,b);
-Console.WriteLine(res);
+try
+{
+    Console.WriteLine("Enter first integer number");
+    int a = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Enter second integer number");
+    int b = Convert.ToInt32(Console.ReadLine());
+    int res = Stepen(a,b);
+    Console.WriteLine(res);
+
+}
+catch 
+{
+    Console.WriteLine("Please enter integer numbers");
+    
+}
+ 
 
 
 
