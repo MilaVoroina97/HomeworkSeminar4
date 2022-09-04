@@ -32,7 +32,7 @@ int[] FillArray(string x)
     }
 try
 {
-    Console.WriteLine("Введите 8 целых чисел");
+    Console.WriteLine("Введите 8 целых чисел без пробелов и запятых: ");
     string N = Console.ReadLine();
     int[] result = FillArray(N);
     PrintArray(result);
