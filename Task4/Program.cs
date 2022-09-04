@@ -35,10 +35,17 @@ void SortArray(int[] array)
         array[max_position] = temp;
     }
 }
-Console.WriteLine("Введите число элементов массива: ");
-int N = Convert.ToInt32(Console.ReadLine());
-int[] result = new int[N];
-FillArray(result);
-PrintArray(result);
-SortArray(result);
-PrintArray(result);
+try
+{
+    Console.WriteLine("Введите число элементов массива: ");
+    int N = Convert.ToInt32(Console.ReadLine());
+    int[] result = new int[N];
+    FillArray(result);
+    PrintArray(result);
+    SortArray(result);
+    PrintArray(result);
+}
+catch
+{
+    Console.WriteLine("Введите, пожалуйста, целые числа для количества элементов массива");
+}
