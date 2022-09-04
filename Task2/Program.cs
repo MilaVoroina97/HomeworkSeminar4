@@ -13,9 +13,9 @@ int NumberSum(int a)
     int res = 0;
     for (int i = 0; i < length; i++)
     {
-        res = a - (a % 10);
-        sum = sum + (a - res);
-        a = (a / 10);
+        res = a - (a % 10); 
+        sum = sum + (a - res); 
+        a = (a / 10); 
     }
     return sum;
 
