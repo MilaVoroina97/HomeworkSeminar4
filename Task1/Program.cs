@@ -37,7 +37,7 @@ try
     Console.WriteLine("Enter second integer number");
     int b = Convert.ToInt32(Console.ReadLine());
     int res = Stepen(a,b);
-    Console.WriteLine(res);
+    Console.WriteLine($"Число {a} в степени {b} равно: {res}");
 
 }
 catch 
